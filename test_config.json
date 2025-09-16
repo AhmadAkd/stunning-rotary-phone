@@ -22,11 +22,11 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "102.132.188.3",
-                        "port": 80,
+                        "address": "160.25.74.112",
+                        "port": 10109,
                         "users": [
                             {
-                                "id": "e95e35ba-f874-4eb3-9600-4dbd6d099f4e",
+                                "id": "ef9ffa72-b723-4382-a7d6-88e2cd2aa773",
                                 "alterId": 0,
                                 "security": "auto"
                             }
@@ -35,14 +35,14 @@
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "",
+                "network": "",
+                "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": true,
-                    "sni": ""
+                    "sni": "content.cdp.bethesda.net"
                 },
                 "wsSettings": {
-                    "path": "/",
+                    "path": "",
                     "headers": {
                         "Host": ""
                     }
