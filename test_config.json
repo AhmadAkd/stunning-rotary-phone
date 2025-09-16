@@ -1,0 +1,57 @@
+{
+    "inbounds": [
+        {
+            "port": 1080,
+            "protocol": "socks",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vmess",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "99.199.73.27",
+                        "port": 8060,
+                        "users": [
+                            {
+                                "id": "6d5d6143-2daa-41d5-c51f-cb7b64783b68",
+                                "alterId": 0,
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "sni": "sport-shop-online-02.cyberscaler.com"
+                },
+                "wsSettings": {
+                    "path": "/dsjh5tGfRgUy789-jU/",
+                    "headers": {
+                        "Host": "sport-shop-online-02.cyberscaler.com"
+                    }
+                }
+            }
+        },
+        {
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ]
+}
